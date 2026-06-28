@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogurt Favorites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Yogurt Favorites</h1>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flavors">Flavors</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h2>Fresh, Creamy, and Delicious Yogurt</h2>
+                <p>
+                    Yogurt is a simple snack that can be healthy, flavorful, and easy to enjoy any time of day.
+                    From strawberry to vanilla to Greek yogurt, there are many options for different tastes.
+                </p>
+                <a href="#flavors" class="btn">Explore Flavors</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80" alt="A bowl of yogurt with fruit">
+            </div>
+        </section>
+
+        <section id="flavors" class="section">
+            <h2>Popular Yogurt Flavors</h2>
+            <p class="section-intro">Here are a few yogurt flavors that are popular and easy to find.</p>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="./images/Strawberry Yogurt.png" alt="Strawberry yogurt">
+                    <h3>Strawberry</h3>
+                    <p>Sweet, fruity, and one of the most common yogurt flavors.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./images/Vanilla Yogurt.png" alt="Vanilla yogurt with fruit">
+                    <h3>Vanilla</h3>
+                    <p>A smooth and classic flavor that pairs well with granola or fruit.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./images/Blueberry Yogurt.png" alt="Blueberry yogurt">
+                    <h3>Blueberry</h3>
+                    <p>A slightly tart and refreshing flavor with a natural fruit taste.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="section benefits">
+            <h2>Why People Like Yogurt</h2>
+
+            <div class="benefit-list">
+                <div>
+                    <h3>Easy Snack</h3>
+                    <p>Yogurt is quick to eat and can be taken to school, work, or eaten at home.</p>
+                </div>
+
+                <div>
+                    <h3>Customizable</h3>
+                    <p>You can add fruit, honey, granola, nuts, or cereal to make it more filling.</p>
+                </div>
+
+                <div>
+                    <h3>Many Choices</h3>
+                    <p>There are many types, including Greek yogurt, low-fat yogurt, and dairy-free options.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section">
+            <h2>Flavor Rating</h2>
+            <p class="section-intro">Pick which yogurt flavor sounds best to you.</p>
+
+            <div class="rating-box">
+                <button onclick="showFavorite('Strawberry')">Strawberry</button>
+                <button onclick="showFavorite('Vanilla')">Vanilla</button>
+                <button onclick="showFavorite('Blueberry')">Blueberry</button>
+
+                <p id="favoriteResult">Choose a flavor above.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yogurt Favorites | Student Web Design Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
